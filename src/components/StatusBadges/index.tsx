@@ -8,11 +8,11 @@ type StatusBadgesProps = {
 };
 function StatusBadges({ status }: StatusBadgesProps) {
   const statusColor =
-    status === RIDE_STATUS.inProgress
+    status === RIDE_STATUS.pending
       ? "warning"
-      : status === RIDE_STATUS.finished
+      : status === RIDE_STATUS.inProgress
         ? "success"
-        : status === RIDE_STATUS.pending
+        : status === RIDE_STATUS.finished
           ? "info"
           : "error";
   return (

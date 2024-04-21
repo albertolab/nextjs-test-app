@@ -4,3 +4,10 @@ export const RIDE_STATUS = {
   finished: "finished",
   canceled: "canceled",
 };
+
+export const RIDE_STATUS_LIST = [
+  "pending",
+  "inProgress",
+  "finished",
+  "canceled",
+];

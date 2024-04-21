@@ -1,4 +1,3 @@
-import Bubbles from "@/components/Bubbles";
 import RidesList from "@/components/RidesList";
 
 export default function RoutesPage() {

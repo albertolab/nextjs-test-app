@@ -1,4 +1,5 @@
 export type Ride = {
+  id: number;
   busLicensePlate: string;
   busDriver: {
     firstName: string;
@@ -9,4 +10,6 @@ export type Ride = {
   price: number;
   distance: number;
   status: string;
+  departureTime: string;
+  arrivalTime: string;
 };
