@@ -1,0 +1,26 @@
+table {
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(54, 51, 51, 0.1);
+  border-radius: 1rem;
+  display: table;
+  table-layout: auto;
+}
+
+th,
+td {
+  padding: 15px;
+  background-color: rgba(100, 40, 77, 0.2);
+}
+
+th {
+  text-align: left;
+  background-color: rgba(196, 31, 160, 0.696);
+}
+tr {
+  &:hover {
+    background-color: rgba(237, 135, 215, 0.696);
+    transition: transform 0.1s; /* Animation */
+    transform: scale(1.01);
+  }
+}
