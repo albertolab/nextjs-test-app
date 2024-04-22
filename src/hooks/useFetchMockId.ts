@@ -1,5 +1,6 @@
 "use client";
-import { DATA_RIDES } from "@/app/mock/data";
+
+import { DATA_RIDES } from "@/mock/data";
 import { useEffect, useState } from "react";
 
 export default function useFetchMockId(id: number) {

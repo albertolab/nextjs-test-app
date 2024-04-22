@@ -31,3 +31,50 @@
     @apply opacity-100;
   }
 }
+
+.image-container {
+  width: fit-content; /* Adjust as needed */
+  text-align: center;
+  opacity: 0; /* Initially hide the text */
+  animation: slideInLeft 3s ease-in-out forwards;
+  display: flex;
+  flex-direction: row;
+}
+
+.animated-image {
+  width: 100%; /* Adjust as needed */
+  height: 500px; /* Adjust as needed */
+  animation: moveImage 5s linear infinite;
+}
+
+@keyframes moveImage {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(300%); /* Adjust for image width */
+  }
+}
+
+.animated-text {
+  width: fit-content; /* Adjust as needed */
+  text-align: center;
+  opacity: 0; /* Initially hide the text */
+  animation: slideInLeft 3s ease-in-out forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%); /* Start offscreen to the left */
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0); /* Animate to center */
+    opacity: 1;
+  }
+}
+
+.route-image {
+  width: 100%; /* Adjust as needed */
+  height: 500px; /* Adjust as needed */
+}
