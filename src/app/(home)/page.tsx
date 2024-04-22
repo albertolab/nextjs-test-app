@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Demo De Rutas De Autobuses",
@@ -20,6 +21,12 @@ export default function Home() {
                 Esta es una aplicación web desarrollada con Next.js que permite
                 a los usuarios ver una lista de rutas de autobuses disponibles.
               </p>
+              <Link
+                href="/rutas-autobuses"
+                className="dark:bg-secondary/90 inline-block rounded-lg bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:text-white dark:hover:bg-white/5"
+              >
+                Ver Rutas Disponibles
+              </Link>
             </div>
           </div>
         </div>
